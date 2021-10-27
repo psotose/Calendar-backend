@@ -85,6 +85,8 @@ const tokenRevalidation = async(req, res = express.response) => {
 
   res.status(201).json({
     ok: true,
+    uid,
+    name,
     token
   });
 }
